@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.html',{
+"title":"Магазин Veloplus"
+})
+<body class="subpage">
+
+@@include('html/_sprite.html')
+
+<div class="wrapper">
+
+    @@include('html/_header.html')
+    @@include('html/_mobile-menu.html')
+
+    <main class="content">
+        <div class="wrap">
+            <div class="text-page">
+                <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a title="Головна" itemprop="item" href="index.html">
+                            <span itemprop="name">Магазин Veloplus</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </div>
+                    <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a title="Кошик" itemprop="item" href="shop-cart.html">
+                            <span itemprop="name">Кошик</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </div>
+                    <div class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <link href="#" itemprop="item">
+                        <span itemprop="name">Оформлення замовлення</span>
+                        <meta itemprop="position" content="3">
+                    </div>
+                </div>
+                <div class="content-title">
+                    <h1>Оформлення замовлення</h1>
+                </div>
+                <div class="order-page clr">
+                    <div class="checkout__form">
+                        <ul class="step-of-order">
+                            <li class="step-of-order__item">
+                                <a href="shop-cart.html" class="step-of-order__link">
+                                    <span class="step-of-order__link-number">1</span> Перелік товарів
+                                </a>
+                            </li>
+                            <li class="step-of-order__item active">
+                                <span class="step-of-order__link">
+                                    <span class="step-of-order__link-number">2</span> Оформлення замовлення
+                                </span>
+                            </li>
+                        </ul>
+                        <form class="order-page__columns">
+                            <div class="page-columns__big">
+                                <div class="checkout__form-unit mod-registration">
+                                    <div class="checkout__form-unit-top-line clr">
+                                        <div class="checkout__form-unit-top-line-left-part">
+                                            <h2>Вперше замовляю на Вело+</h2>
+                                        </div>
+                                        <div class="checkout__form-unit-top-line-right-part">
+                                            <div class="checkout__form-unit-top-line-enter">Вже є аккаунт? <a href="#entry-window" class="link-to-window">Увійти!</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="checkout__form-unit-content">
+                                        <div class="checkout__form-fast-registration">
+                                            <div class="checkout__form-fast-registration-text">
+                                                Швидко зареєструватись через мережі
+                                            </div>
+                                            <div class="checkout__form-fast-registration-links">
+                                                <a href="#" class="checkout__form-fast-registration-link mod-facebook">
+                                                    <svg width="16" height="16">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-2"></use>
+                                                    </svg>
+                                                    <span class="btn__content">Facebook</span>
+                                                </a>
+                                                <a href="#" class="checkout__form-fast-registration-link mod-google">
+                                                    <svg width="16" height="16">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google"></use>
+                                                    </svg>
+                                                    <span class="btn__content">Google</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="checkout__form-registration-text">
+                                            <div class="checkout__form-registration-text__big">
+                                                Або заповніть дані через форму для автоматичної реєстрації під час оформлення
+                                            </div>
+                                            Пароль згенерується автоматично та надійде Вам на електронну пошту. Погоджуюсь з
+                                            <a href="#">угодою користувача </a>
+                                        </div>
+                                        <div class="checkout__form-unit-inputs">
+                                            <div class="form__line">
+                                                <div class="form__line-col-l">
+                                                    <label>Ім'я <span class="text-color-1">*</span></label>
+                                                    <input type="text" required="">
+                                                </div>
+                                                <div class="form__line-col-r">
+                                                    <label>Прізвище <span class="text-color-1">*</span></label>
+                                                    <input type="text" required="">
+                                                </div>
+                                            </div>
+                                            <div class="form__line">
+                                                <div class="form__line-col-l">
+                                                    <label>Ел.Пошта <span class="text-color-1">*</span></label>
+                                                    <input type="email" required="">
+                                                </div>
+                                                <div class="form__line-col-r">
+                                                    <label>Телефон <span class="text-color-1">*</span></label>
+                                                    <input type="tel" required="">
+                                                </div>
+                                            </div>
+                                            <div class="form__line">
+                                                <div class="check">
+                                                    <input type="checkbox" name="check1" id="check1">
+                                                    <label for="check1">Хочу отримувати інформацію про нові акції,
+                                                        отримувати промокоди.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="checkout__form-unit mod-delivery">
+                                    <div class="checkout__form-unit-top-line">
+                                        <div class="checkout__form-unit__title">Доставка</div>
+                                    </div>
+                                    <div class="checkout__form-unit-content">
+                                        <div class="checkout__form-unit-inputs line-for-select">
+                                            <div class="form__line">
+                                                <div class="form__line-col-l">
+                                                    <label>Область <span class="text-color-1">*</span></label>
+                                                    <select>
+                                                        <option value="Варіант1">Рівеньска</option>
+                                                        <option value="Варіант2">Варіант2</option>
+                                                        <option value="Варіант3">Варіант3</option>
+                                                        <option value="Варіант4">Варіант4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form__line-col-r">
+                                                    <label>Місто або населений пункт <span class="text-color-1">*</span></label>
+                                                    <select>
+                                                        <option value="Варіант1">Рівне</option>
+                                                        <option value="Варіант2">Варіант2</option>
+                                                        <option value="Варіант3">Варіант3</option>
+                                                        <option value="Варіант4">Варіант4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout__boxes">
+                                            <div class="checkout__box mod-vertical-align-top">
+                                                <div class="checkout__box-unit">
+                                                    <div class="checkout__option-link">
+                                                        <div class="checkout__box-radio icheck" >
+                                                            <input type="radio" id="radio-1" name="checkout__box-radio"/>
+                                                            <label></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__option-icon">
+                                                        <img src="img/Nova_Poshta-logo.svg" width="100" height="36" loading="lazy" decoding="async" alt="Нова пошта">
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box-info clr">
+                                                    <div class="checkout__option-title">
+                                                        Нова пошта cамовивіз
+                                                    </div>
+                                                    <div class="checkout__option-text">
+                                                        <p>
+                                                            Вартість доставки замовлення по тарифам транспортної компанії
+                                                            <a href="novaposhta.ua">novaposhta.ua</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="form__line">
+                                                        <label>Вкажіть № відділення <span class="text-color-1">*</span></label>
+                                                        <div class="short-input">
+                                                            <input type="text" required="">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="checkout__box mod-vertical-align-top">
+                                                <div class="checkout__box-unit">
+                                                    <div class="checkout__option-link">
+                                                        <div class="checkout__box-radio icheck" >
+                                                            <input type="radio" name="checkout__box-radio"/>
+                                                            <label></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__option-icon">
+                                                        <img src="img/Nova_Poshta-logo.svg" width="100" height="36" loading="lazy" decoding="async" alt="Нова пошта">
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box-info clr">
+                                                    <div class="checkout__option-title">
+                                                        Нова пошта кур'єром
+                                                    </div>
+                                                    <div class="checkout__option-text">
+                                                        <p>
+                                                            Вартість доставки замовлення по тарифам транспортної компанії
+                                                            <a href="novaposhta.ua">novaposhta.ua</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="form__line">
+                                                        <label>Вкажіть адресу <span class="text-color-1">*</span></label>
+                                                        <input type="text" required="">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="checkout__box">
+                                                <div class="checkout__box-unit">
+                                                    <div class="checkout__option-link">
+                                                        <div class="checkout__box-radio icheck" >
+                                                            <input type="radio" name="checkout__box-radio"/>
+                                                            <label></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__option-icon">
+                                                        <img src="img/logo-red.svg" width="137" height="20" loading="lazy" decoding="async" alt="Veloplus">
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box-info clr">
+                                                    <div class="checkout__option-title">
+                                                        м.Полтава самовивіз з нашого магазину
+                                                    </div>
+                                                    <div class="checkout__option-text">
+                                                        <p>
+                                                            вул Раїси Кириченко 45/19
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="checkout__form-unit mod-pay">
+                                    <div class="checkout__form-unit-top-line">
+                                        <div class="checkout__form-unit__title">Спосіб оплати</div>
+                                    </div>
+                                    <div class="checkout__form-unit-content">
+                                        <div class="checkout__boxes">
+                                            <div class="checkout__box">
+                                                <div class="checkout__box-unit">
+                                                    <div class="checkout__option-link">
+                                                        <div class="checkout__box-radio icheck" >
+                                                            <input type="radio" name="checkout__box-radio-pay"/>
+                                                            <label></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__option-icon">
+                                                        <img src="img/logo_liqpay.svg" width="100" height="22" loading="lazy" decoding="async" alt="liqpay">
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box-info clr">
+                                                    <div class="checkout__option-title">
+                                                        Liqpay ПриватБанк
+                                                    </div>
+                                                    <div class="checkout__option-text">
+                                                        <p>
+                                                            Онлайн оплата карткою банку
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="checkout__box">
+                                                <div class="checkout__box-unit">
+                                                    <div class="checkout__option-link">
+                                                        <div class="checkout__box-radio icheck" >
+                                                            <input type="radio" name="checkout__box-radio-pay"/>
+                                                            <label></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__option-icon">
+                                                        <img src="img/wayforpay.jpg" width="100" height="21" loading="lazy" decoding="async" alt="wayforpay">
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box-info clr">
+                                                    <div class="checkout__option-title">
+                                                        Wayforpay (Apple pay, Google pay, оплата частинами Monobank)
+                                                    </div>
+                                                    <div class="checkout__option-text">
+                                                        <p>
+                                                            Онлайн оплата карткою банку
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="checkout__box">
+                                                <div class="checkout__box-unit">
+                                                    <div class="checkout__option-link">
+                                                        <div class="checkout__box-radio icheck" >
+                                                            <input type="radio" name="checkout__box-radio-pay"/>
+                                                            <label></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__option-icon">
+                                                        <img src="img/Nova_Poshta-logo.svg" width="100" height="36" loading="lazy" decoding="async" alt="Нова пошта">
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box-info clr">
+                                                    <div class="checkout__option-title">
+                                                        Накладений платіж Нова пошта
+                                                    </div>
+                                                    <div class="checkout__option-text">
+                                                        Розрахунок при отримані товару у відділенні або кур’єру
+                                                        транспортної компанії. Транспортна компанія додатково до суми
+                                                        замовлення бере комісію 2%
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="checkout__box">
+                                                <div class="checkout__box-unit">
+                                                    <div class="checkout__option-link">
+                                                        <div class="checkout__box-radio icheck" >
+                                                            <input type="radio" name="checkout__box-radio-pay"/>
+                                                            <label></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__option-icon">
+                                                        <img src="img/cash-icon.svg" width="100" height="35" loading="lazy" decoding="async" alt="Готівка">
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box-info clr">
+                                                    <div class="checkout__option-title">
+                                                        Готівкою в магазині в м.Полоне
+                                                    </div>
+                                                    <div class="checkout__option-text">
+                                                        вул Раїси Кириченко 45/19
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="checkout__box">
+                                                <div class="checkout__box-unit">
+                                                    <div class="checkout__option-link">
+                                                        <div class="checkout__box-radio icheck" >
+                                                            <input type="radio" name="checkout__box-radio-pay"/>
+                                                            <label></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__option-icon">
+                                                        <img src="img/no-cash.svg" width="100" height="35" loading="lazy" decoding="async" alt="Безготівковий розрахунок">
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box-info clr">
+                                                    <div class="checkout__option-title">
+                                                        Безготівковий розрахунок.
+                                                    </div>
+                                                    <div class="checkout__option-text">
+                                                        Менеджер відправить вам рахунок фактуру
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="checkout__box mod-vertical-align-top">
+                                                <div class="checkout__box-unit">
+                                                    <div class="checkout__option-link">
+                                                        <div class="checkout__box-radio icheck" >
+                                                            <input type="radio" name="checkout__box-radio-pay"/>
+                                                            <label></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout__option-icon">
+                                                        <img src="img/privat-order.svg" width="100" height="30" loading="lazy" decoding="async" alt="Оплата частинами ПриватБанк">
+                                                    </div>
+                                                </div>
+                                                <div class="checkout__box-info clr">
+                                                    <div class="checkout__option-title">
+                                                        Оплата частинами ПриватБанк
+                                                    </div>
+                                                    <div class="form__line">
+                                                        <label>Оберіть кількість місяців <span class="text-color-1">*</span></label>
+                                                        <div class="short-select">
+                                                            <select>
+                                                                <option value="Варіант1">2</option>
+                                                                <option value="Варіант2">3</option>
+                                                                <option value="Варіант3">4</option>
+                                                                <option value="Варіант4">5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <aside class="page-columns__small mod-right">
+                                <div class="total-order">
+                                    <div class="total-order-promo__total">
+                                        <div class="total-order-title">
+                                            Всього
+                                        </div>
+                                        <div class="total-order-detal">
+                                            <p>2 тов. на суму: <span class="nowrap">30 900 грн.</span></p>
+                                            <p>Знижка: <span class="nowrap">900 грн.</span></p>
+                                        </div>
+
+                                        <div class="total-order-result">
+                                            <p>До сплати:</p>
+                                            <span class="nowrap"><span class="price">12 500 <span class="currency">грн.</span></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="total-order-button-line">
+                                        <button type="submit" class="btn btn-size-1 btn-color-1">
+                                            Підтверджую замовлення
+                                        </button>
+                                    </div>
+                                </div>
+                            </aside>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    @@include('html/_footer.html')
+</div>
+
+@@include('html/_popup.html')
+
+@@include('html/_js.html')
+
+</body>
+</html>

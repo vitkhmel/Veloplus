@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.html',{
+	"title":"Магазин Veloplus"
+	})
+	<body class="subpage">
+
+		@@include('html/_sprite.html')
+
+		<div class="wrapper">
+
+			@@include('html/_header.html')
+			@@include('html/_mobile-menu-entry.html')
+
+			<main class="content">
+				<div class="wrap">
+					<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Головна" itemprop="item" href="index.html">
+								<span itemprop="name">Магазин Veloplus</span>
+							</a>
+							<meta itemprop="position" content="1">
+						</div>
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Кабінет" itemprop="item" href="my_room_index.html">
+								<span itemprop="name">Кабінет</span>
+							</a>
+							<meta itemprop="position" content="2">
+						</div>
+						<div class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<link href="#" itemprop="item">
+							<span itemprop="name">Підписка</span>
+							<meta itemprop="position" content="3">
+						</div>
+					</div>
+					<div class="content-title">
+						<h1>Підписка</h1>
+					</div>
+					<div class="my-room page-columns clr">
+						@@include('html/_my-room__menu.html')
+
+						<div class="room-section page-columns__big">
+							<div class="room-section__line-box mod-subsubscribe">
+								<form class="room-section__form room-form__subscribe">
+									<div class="text">
+										<h2>Хочу отримувати розсилку на акції, промокоди, подарунки, корисну інформацію </h2>
+										<p>
+											Ви можете пов'язати свій профіль з профілями соціальних мереж, для швидкого входу
+											в кабінет в один клік.
+										</p>
+									</div>
+									<div class="checkbox form__line">
+										<div class="check">
+											<input type="checkbox" name="check1" id="check1">
+											<label for="check1">Підписатися</label>
+										</div>
+									</div>
+									<div class="form__line mod-button">
+										<button type="submit" class="btn btn-size-1 btn-color-1">
+											Зберегти зміни
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			@@include('html/_footer.html')
+		</div>
+
+		@@include('html/_popup.html')
+
+		@@include('html/_js.html')
+
+	</body>
+</html>

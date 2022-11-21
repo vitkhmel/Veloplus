@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.html',{
+	"title":"Магазин Veloplus"
+	})
+	<body class="subpage  mod-filter_page">
+
+		@@include('html/_sprite.html')
+
+		<div class="wrapper">
+
+			@@include('html/_header.html')
+			@@include('html/_mobile-menu.html')
+
+			<main class="content">
+				<div class="wrap">
+					<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Головна" itemprop="item" href="index.html">
+								<span itemprop="name">Магазин Veloplus</span>
+							</a>
+							<meta itemprop="position" content="1">
+						</div>
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Каталог" itemprop="item" href="catalogue_lv1.html">
+								<span itemprop="name">Каталог</span>
+							</a>
+							<meta itemprop="position" content="2">
+						</div>
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Велосипеди" itemprop="item" href="catalogue_lv2.html">
+								<span itemprop="name">Велосипеди</span>
+							</a>
+							<meta itemprop="position" content="3">
+						</div>
+						<div class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<link href="#" itemprop="item">
+							<span itemprop="name">Гірські</span>
+							<meta itemprop="position" content="4">
+						</div>
+					</div>
+					<div class="content-title">
+						<h1>Гірські</h1>
+					</div>
+
+					<div class="filter-page">
+						<div class="box-for-filter-category">
+							<div class="filter-category">
+								<a href="#" class="filter-category__item">
+									<div class="filter-category__img">
+										<img src="img/category-1-small.jpg" width="60" height="34" alt="test picture">
+									</div>
+									<div class="filter-category__text">Велосипеди для <span class="nowrap">крос-кантрі</span></div>
+								</a>
+								<a href="#" class="filter-category__item">
+									<div class="filter-category__img">
+										<img src="img/category-2-small.jpg" width="60" height="34" alt="test picture">
+									</div>
+									<div class="filter-category__text">Жіночі гірські велосипеди</div>
+								</a>
+								<a href="#" class="filter-category__item">
+									<div class="filter-category__img">
+										<img src="img/category-3-small.jpg" width="60" height="34" alt="test picture">
+									</div>
+									<div class="filter-category__text">Двопідвіси</div>
+								</a>
+								<a href="#" class="filter-category__item">
+									<div class="filter-category__img">
+										<img src="img/category-1-small.jpg" width="60" height="34" alt="test picture">
+									</div>
+									<div class="filter-category__text">Найнери</div>
+								</a>
+								<a href="#" class="filter-category__item">
+									<div class="filter-category__img">
+										<img src="img/category-1-small.jpg" width="60" height="34" alt="test picture">
+									</div>
+									<div class="filter-category__text">Велосипеди для <span class="nowrap">крос-кантрі</span></div>
+								</a>
+								<a href="#" class="filter-category__item">
+									<div class="filter-category__img">
+										<img src="img/category-2-small.jpg" width="60" height="34" alt="test picture">
+									</div>
+									<div class="filter-category__text">Жіночі гірські велосипеди</div>
+								</a>
+								<a href="#" class="filter-category__item">
+									<div class="filter-category__img">
+										<img src="img/category-3-small.jpg" width="60" height="34" alt="test picture">
+									</div>
+									<div class="filter-category__text">Двопідвіси</div>
+								</a>
+								<a href="#" class="filter-category__item">
+									<div class="filter-category__img">
+										<img src="img/category-1-small.jpg" width="60" height="34" alt="test picture">
+									</div>
+									<div class="filter-category__text">Найнери</div>
+								</a>
+							</div>
+							<a href="#" class="filter-category__btn">
+								<span class="normal-text">Показати всі</span>
+								<span class="active-text">Згорнути</span>
+							</a>
+						</div>
+
+						<div class="top-filter clr">
+							<div class="top-filter__unit mod-filter-hide">
+								<div class="top-filter__title">Фільтр</div>
+								<a href="#" class="btn btn-size-2 btn-color-1 filter-btn">
+									<span class="btn__content">
+										<span class="filter-btn__normal-text">Сховати</span>
+										<span class="filter-btn__active-text">Показати</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="top-filter__unit top-filter__unit--sort">
+								<div class="top-filter__unit-b-sort">
+									<div class="top-filter__unit--sort-icon">
+										<svg width="16" height="14">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sort"></use>
+										</svg>
+									</div>
+									<div class="top-filter__unit--sort-text">Сортування</div>
+								</div>
+								<div class="form__select small-select">
+									<select>
+										<option value="Варіант1">Дешевші</option>
+										<option value="Варіант2">Варіант2</option>
+										<option value="Варіант3">Варіант3</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="top-filter__unit mod-mobile-hidden">
+								<div class="form__select small-select">
+									<select>
+										<option value="Варіант1">Показити Всі</option>
+										<option value="Варіант2">Варіант2</option>
+										<option value="Варіант3">Варіант3</option>
+									</select>
+								</div>
+							</div>
+
+							<a href="#" class="mobile-filter-btn">
+								<div class="mobile-filter-btn-icon">
+									<svg width="17" height="14">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#filter"></use>
+									</svg>
+								</div>
+								<div class="mobile-filter-btn-text">Фільтр</div>
+							</a>
+
+							<div class="top-filter__unit mod-view">
+								<span class="catalogue-panel__view active mod-grid">
+									<svg width="16" height="16">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#grid"></use>
+									</svg>
+								</span>
+								<a href="filter-list.html" class="catalogue-panel__view" aria-label="list">
+									<svg width="16" height="16">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#list"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="page-columns">
+							<aside class="page-columns__small mod-left filter-aside">
+								<div class="filter-aside__background"></div>
+								<form class="filter-form">
+									<div class="filter-form__top-line">
+										<div class="filter-form__top-line-title">Фільтр</div>
+										<button class="filter-close-btn close-btn" aria-label="close">
+											<svg width="9" height="9">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+											</svg>
+										</button>
+									</div>
+
+									<div class="filter-box-top">
+										<div class="filter-line clr">
+											<div class="filter__title">
+												Вы выбрали
+											</div>
+										</div>
+										<div class="filter-box-top__btns">
+											<a class="btn btn-type3 mod-color-1" href="#">
+												Бренд Leon
+												<span class="del-icon">
+													<svg width="9" height="9">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+													</svg>
+												</span>
+											</a>
+											<a class="btn btn-type3 mod-color-1" href="#">
+												Рік 2022
+												<span class="del-icon">
+													<svg width="9" height="9">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+													</svg>
+												</span>
+											</a>
+											<a class="btn btn-type3 mod-color-1" href="#">
+												Розмір колес 26”
+												<span class="del-icon">
+													<svg width="9" height="9">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+													</svg>
+												</span>
+											</a>
+										</div>
+										<div class="filter__clear-line">
+											<a class="filter__clear" href="#">Очистити все</a>
+										</div>
+
+									</div>
+									<div class="filter__list-group">
+										<div class="line-accordion list-group-item ocfilter-option">
+											<div class="accordion-name option-name clr">
+												<span class="accordion-name__title">Ціна</span>
+											</div>
+											<div class="accordion-info">
+												<div class="form__sliders_box clr">
+													<div class="sliders_box-inputs clearfix">
+														<div class="sliders_unit form__input price">
+															<input type="text" id="amount11" class="amount" value="0"/>
+														</div>
+														<div class="sliders_unit form__input price">
+															<input type="text" id="amount12" class="amount" value="9999"/>
+														</div>
+													</div>
+													<div class="sliders"></div>
+												</div>
+											</div>
+										</div>
+										<div class="line-accordion list-group-item ocfilter-option">
+											<div class="accordion-name option-name clr">
+												<span class="accordion-name__title">Бренд</span>
+											</div>
+											<div class="accordion-info">
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check1" id="check1">
+														<label for="check1">Cube </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check2" id="check2" disabled>
+														<label for="check2">Centurion </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check3" id="check3">
+														<label for="check3">Haibike </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check4" id="check4">
+														<label for="check4">VelomanExtreme </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check5" id="check5">
+														<label for="check5">Kross </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck disabled">
+														<input type="checkbox" name="check6" id="check6" disabled="disabled">
+														<label for="check6">Formula </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check7" id="check7" disabled>
+														<label for="check7">Optimabikes</label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check8" id="check8">
+														<label for="check8">Royal-Baby </label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="line-accordion list-group-item ocfilter-option">
+											<div class="accordion-name option-name clr">
+												<span class="accordion-name__title">Год</span>
+											</div>
+											<div class="accordion-info">
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check21" id="check21">
+														<label for="check21">Cube </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check22" id="check22">
+														<label for="check22">Centurion </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check23" id="check23">
+														<label for="check23">Haibike </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check24" id="check24">
+														<label for="check24">VelomanExtreme </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check25" id="check25">
+														<label for="check25">Kross </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck disabled">
+														<input type="checkbox" name="check26" id="check26" disabled="disabled">
+														<label for="check26">Formula </label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check27" id="check27" disabled>
+														<label for="check27">Optimabikes</label>
+													</div>
+												</div>
+												<div class="checkbox line">
+													<div class="form_checkbox icheck">
+														<input type="checkbox" name="check28" id="check28">
+														<label for="check28">Royal-Baby </label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="btn-apply clr" style="top: 273px; display: block;">
+										<a class="btn-apply__show" href="#"><span>Показать</span></a>
+										<div class="btn-apply__text">Найдено <br> товаров <span class="bold">21</span></div>
+										<a class="btn-apply__close" href="#">
+											<svg width="8" height="8">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close-2"></use>
+											</svg>
+										</a>
+										<a href="#" class="btn-apply__mobile-close">Очистити</a>
+									</div>
+								</form>
+							</aside>
+							<div class="page-columns__big view-grid">
+								<div class="filter-page__info-box clr">
+									<div class="filter-page__info-box-info-left">
+										<div class="filter-page__info-box-info-title-line">
+											<div class="filter-page__info-box-info-title">
+												<h2>
+													Практичність - якість,
+													ціна з ідеальним балансом
+												</h2>
+											</div>
+											<div class="filter-page__info-box-info-title-logo">
+												<img src="img/logo/brend-1.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+											</div>
+										</div>
+										<div class="text clr">
+											<p class="big-text">
+												Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала
+												певних змін на кшталт жартівливих вставок або змішування слів.
+											</p>
+											<p>
+												Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед
+												заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим
+												справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини
+											</p>
+										</div>
+									</div>
+									<div class="filter-page__info-box-info-right">
+										<div class="filter-page__info-box-info-title-logo">
+											<img src="img/logo/brend-1.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+										</div>
+									</div>
+								</div>
+
+								<div class="filter-page__products section-for-products mod-grid">
+									<div class="box-for-product">
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+
+										@@include('html/_product-end.html')
+										@@include('html/_product-end.html')
+										@@include('html/_product-end.html')
+										@@include('html/_product-end.html')
+
+										@@include('html/_product-none.html')
+										@@include('html/_product-none.html')
+										@@include('html/_product-none.html')
+										@@include('html/_product-none.html')
+
+										@@include('html/_product-wait.html')
+										@@include('html/_product-wait.html')
+										@@include('html/_product-wait.html')
+										@@include('html/_product-wait.html')
+
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										<div class="pagination__load-line">
+											<a href="#" class="pagination__load btn btn-size-1 btn-color-1">
+												Показати більше
+											</a>
+										</div>
+									</div>
+									<ul class="pagination">
+										<li class="pagination-item prev">
+											<a href="#" class="pagination-link" aria-label="previous">
+												<svg width="7" height="12">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arw-right"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="pagination-item">
+											<a href="#" class="pagination-link">1</a>
+										</li>
+										<li class="pagination-item active">
+											<a href="#" class="pagination-link">2</a>
+										</li>
+										<li class="pagination-item">
+											<a href="#" class="pagination-link">3</a>
+										</li>
+										<li class="pagination-item next">
+											<a href="#" class="pagination-link" aria-label="next">
+												<svg width="7" height="12">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arw-right"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+								<section class="section-for-products">
+									<div class="section-title">
+										<h2 class="h1">Ви дивилися</h2>
+									</div>
+									<div class="box-for-product filter-product-carousel">
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+										@@include('html/_product.html')
+									</div>
+								</section>
+
+							</div>
+						</div>
+						<div class="text clr">
+							<h2>Н2 Заголовок для бренду - максимальний баланс</h2>
+							<p class="big-text">
+								Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт
+								жартівливих вставок або змішування слів, які навіть
+								не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum.
+							</p>
+							<p>
+								Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед
+								заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим
+								справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий
+								набір моделей речень
+							</p>
+
+							<h3>Н3 Заголовок - максимальний баланс</h3>
+							<p class="big-text">
+								Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт
+								жартівливих вставок або змішування слів, які навіть
+								не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum.
+							</p>
+							<p>
+								Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед
+								заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим
+								справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий
+								набір моделей речень
+							</p>
+
+							<h4>Н4 Заголовок - максимальний баланс</h4>
+							<p class="big-text">
+								Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт
+								жартівливих вставок або змішування слів, які навіть
+								не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum.
+							</p>
+							<p>
+								Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед
+								заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим
+								справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий
+								набір моделей речень
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</main>
+
+			@@include('html/_footer.html')
+		</div>
+
+		@@include('html/_popup.html')
+
+		@@include('html/_js.html')
+
+	</body>
+</html>

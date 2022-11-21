@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.html',{
+	"title":"Магазин Veloplus"
+	})
+	<body class="subpage">
+
+		@@include('html/_sprite.html')
+
+		<div class="wrapper">
+
+			@@include('html/_header.html')
+			@@include('html/_mobile-menu-entry.html')
+
+			<main class="content">
+				<div class="wrap">
+					<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Головна" itemprop="item" href="index.html">
+								<span itemprop="name">Магазин Veloplus</span>
+							</a>
+							<meta itemprop="position" content="1">
+						</div>
+						<div class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<link href="#" itemprop="item">
+							<span itemprop="name">Кабінет</span>
+							<meta itemprop="position" content="2">
+						</div>
+					</div>
+					<div class="content-title">
+						<h1>Кабінет</h1>
+					</div>
+					<div class="my-room page-columns clr">
+						@@include('html/_my-room__menu.html')
+
+						<div class="room-section page-columns__big">
+							<div class="room-section__line-box">
+								<h2>Контактна інформация</h2>
+								<div class="room-section__table">
+									<table class="my-data-table">
+										<tbody>
+										<tr>
+											<td>Ваше ім’я:</td>
+											<td>Наталія</td>
+										</tr>
+										<tr>
+											<td>Прізвище:</td>
+											<td>Іванова</td>
+										</tr>
+										<tr>
+											<td>Ел.пошта:</td>
+											<td>ivanova.natali@gmail.com</td>
+										</tr>
+										<tr>
+											<td>Телефон:</td>
+											<td>+38(066) 390-10-08</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="room-section__btn-line">
+									<a href="my_room_edite-profile.html" class="btn btn-size-2 btn-color-1">
+										Змінити мої дані
+									</a>
+								</div>
+							</div>
+							<div class="room-section__line-box">
+								<div class="room-section__box-social-account">
+									<h2>Зв'язок з соціальними мережами</h2>
+									<p>
+										Ви можете пов'язати свій профіль з профілями соціальних мереж, для швидкого
+										входу в кабінет в один клік.
+									</p>
+									<div class="b-social-account">
+										<div class="b-social-account__item ">
+											<div class="b-social-account__name">
+												<svg width="16" height="16">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-2"></use>
+												</svg>
+												<span class="btn__content">Facebook</span>
+											</div>
+											<div class="b-social-account__status">
+												Не пов'язана
+											</div>
+											<div class="b-social-account__btn-line">
+												<button type="submit">Підключити</button>
+											</div>
+										</div>
+										<div class="b-social-account__item active">
+											<div class="b-social-account__name">
+												<svg width="16" height="16">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google"></use>
+												</svg>
+												<span class="btn__content">Google</span>
+											</div>
+											<div class="b-social-account__status">
+                                        		<span class="b-social-account__status-icon">
+													<svg width="11" height="8">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+													</svg>
+                                    			</span>
+												Пов'язана
+											</div>
+											<div class="b-social-account__btn-line">
+												<button type="submit">Відключити</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<section class="section-for-products">
+								<div class="section-title">
+									<h2>Ви дивилися</h2>
+								</div>
+								<div class="box-for-product my-room__carousel">
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+									@@include('html/_product.html')
+								</div>
+							</section>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			@@include('html/_footer.html')
+		</div>
+
+		@@include('html/_popup.html')
+
+		@@include('html/_js.html')
+
+	</body>
+</html>

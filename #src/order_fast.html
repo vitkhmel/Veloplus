@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.html',{
+"title":"Швидке замовлення"
+})
+<body class="subpage">
+
+@@include('html/_sprite.html')
+
+<div class="wrapper">
+
+    @@include('html/_header.html')
+    @@include('html/_mobile-menu.html')
+
+    <main class="content">
+        <div class="wrap">
+            <div class="text-page">
+                <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a title="Головна" itemprop="item" href="index.html">
+                            <span itemprop="name">Магазин Veloplus</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </div>
+                    <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a title="Кошик" itemprop="item" href="shop-cart.html">
+                            <span itemprop="name">Кошик</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </div>
+                    <div class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <link href="#" itemprop="item">
+                        <span itemprop="name">Швидке замовлення</span>
+                        <meta itemprop="position" content="3">
+                    </div>
+                </div>
+                <div class="content-title">
+                    <h1>Оформлення замовлення</h1>
+                </div>
+                <div class="order-page clr">
+                    <div class="checkout__form">
+                        <ul class="step-of-order">
+                            <li class="step-of-order__item">
+                                <a href="shop-cart.html" class="step-of-order__link">
+                                    <span class="step-of-order__link-number">1</span> Перелік товарів
+                                </a>
+                            </li>
+                            <li class="step-of-order__item active">
+                                <span class="step-of-order__link">
+                                    <span class="step-of-order__link-number">2</span> Оформлення замовлення
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="order-page__columns">
+                            <div class="page-columns__big">
+                                <div class="checkout__form-unit quick-order">
+                                    <h2>Швидке замовлення</h2>
+                                    <form class="checkout__form-unit-inputs">
+                                        <div class="form__line">
+                                            <div class="form__line-col-l">
+                                                <label class="">Телефон <span class="text-color-1">*</span></label>
+                                                <input type="tel" required="">
+                                            </div>
+                                            <div class="form__line-col-r">
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <aside class="page-columns__small mod-right">
+                                <div class="total-order">
+                                    <div class="total-order-promo__total">
+                                        <div class="total-order-title">
+                                            Всього
+                                        </div>
+                                        <div class="total-order-detal">
+                                            <p>2 тов. на суму: <span class="nowrap">30 900 грн.</span></p>
+                                            <p>Знижка: <span class="nowrap">900 грн.</span></p>
+                                        </div>
+
+                                        <div class="total-order-result">
+                                            <p>До сплати:</p>
+                                            <span class="nowrap"><span class="price">12 500 <span class="currency">грн.</span></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="total-order-button-line">
+                                        <button type="submit" class="btn btn-size-1 btn-color-1">
+                                            Підтверджую замовлення
+                                        </button>
+                                    </div>
+                                </div>
+                            </aside>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    @@include('html/_footer.html')
+</div>
+
+@@include('html/_popup.html')
+
+@@include('html/_js.html')
+
+</body>
+</html>

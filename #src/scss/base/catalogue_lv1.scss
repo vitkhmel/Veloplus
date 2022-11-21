@@ -1,0 +1,93 @@
+
+.box-for-catalogue_lv1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px 20px -16px;
+  padding-top: 3px;
+}
+.catalogue_lv1 {
+  display: block;
+  margin: 0 16px 30px 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: 300ms;
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  padding: 32px 5px 32px;
+  width: calc(100% / 6 - 32px);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  &:hover {
+    color: $color-2;
+  }
+  svg {
+    fill: $color-2;
+    max-height: 100%;
+    width: auto;
+  }
+}
+.catalogue_lv1__icon {
+  height: 70px;
+  margin-bottom: 11px;
+  line-height: 0;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+//------------------media screen 1200 begin-----------------------------*/
+@media (max-width: $md2+px) {
+  .catalogue_lv1 {
+    font-size: 14px;
+  }
+}
+
+//------------------media screen 1024 begin-----------------------------*/
+@media (max-width: $md3+px) {
+  .catalogue_lv1 {
+    width: calc(100% / 4 - 32px);
+  }
+  .catalogue_lv1 svg {
+    max-height: 77%;
+    width: auto;
+  }
+}
+
+//------------------media screen 800 end-----------------------------*/
+@media (max-width: $md4+px) {
+  .catalogue_lv1 {
+    padding: 25px 5px 25px;
+  }
+
+}
+
+//------------------media screen 568 begin-----------------------------*/
+@media (max-width: $md5+px) {
+  .box-for-catalogue_lv1 {
+    margin: 0 -5px 20px -5px;
+    padding-top: 0px;
+  }
+
+  .catalogue_lv1 {
+    margin: 0 5px 15px 5px;
+    padding: 20px 5px 20px;
+    width: calc(100% / 4 - 10px);
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+}
+
+
+//------------------media screen 320 begin-----------------------------*/
+
+@media (max-width: $md6+px) {
+  .catalogue_lv1 {
+    width: calc(50% - 10px);
+  }
+}

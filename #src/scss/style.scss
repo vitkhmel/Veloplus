@@ -1,0 +1,115 @@
+
+
+//<МИКСИНЫ>===============================================================================================
+@import "base/mixins";
+//</МИКСИНЫ>===============================================================================================
+
+@import "fonts";
+$fontFamily: "e-Ukraine", "Helvetica Neue", Helvetica, sans-serif;
+
+
+//<libs>====================================================================================================
+@import "libs/slick";
+@import "libs/slick-theme";
+@import "libs/jquery.fancybox.min";
+@import "libs/jquery-ui-tabs-slider.min";
+@import "libs/selectric";
+@import "libs/easy-responsive-tabs";
+//</libs>====================================================================================================
+
+
+$minWidth: 320px;
+$maxWidth: 100%;
+$maxWidthContainer: 1543;
+$md1: $maxWidthContainer + 12;
+$md2: 1599;
+$md3: 1270;
+$md4: 1023;
+$md5: 735;
+$md6: 567;
+
+
+$color-1: #232323;
+$color-2: #C60F28;
+$color-3: #EEF2F3;
+$color-4: #EAB324;
+$color-5: #767676;
+
+
+
+@import "base/null";
+body {
+	color: $color-1;
+	font-family: $fontFamily;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px;
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	//overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&._loaded {
+	}
+}
+
+.wrap {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	min-width: 320px;
+
+  @media (max-width: $md2+px) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: $md3+px) {
+    max-width: 960px;
+  }
+
+  @media (max-width: $md4+px) {
+    max-width: 676px;
+  }
+
+  @media (max-width: $md5+px) {
+    max-width: 100vw;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+@import "base/forms";
+@import "base/popup";
+@import "base/text";
+@import "base/ui";
+@import "base/mobile-menu";
+
+@import "base/header";
+@import "base/footer";
+@import "base/home";
+@import "base/product";
+@import "base/news";
+@import "base/brends";
+@import "base/catalogue_lv1";
+@import "base/catalogue_lv2";
+@import "base/sales";
+@import "base/my-room";
+@import "base/404";
+@import "base/contacts";
+@import "base/service";
+@import "base/order";
+@import "base/menu";
+@import "base/filter";
+@import "base/about-us";
+@import "base/product-card";
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.html',{
+	"title":"Магазин Veloplus"
+	})
+	<body class="subpage">
+
+		@@include('html/_sprite.html')
+
+		<div class="wrapper">
+
+			@@include('html/_header.html')
+			@@include('html/_mobile-menu-entry.html')
+
+			<main class="content">
+				<div class="wrap">
+					<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Головна" itemprop="item" href="index.html">
+								<span itemprop="name">Магазин Veloplus</span>
+							</a>
+							<meta itemprop="position" content="1">
+						</div>
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Кабінет" itemprop="item" href="my_room_index.html">
+								<span itemprop="name">Кабінет</span>
+							</a>
+							<meta itemprop="position" content="2">
+						</div>
+						<div class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<link href="#" itemprop="item">
+							<span itemprop="name">Змінити мої дані</span>
+							<meta itemprop="position" content="3">
+						</div>
+					</div>
+					<div class="content-title">
+						<h1>Змінити мої дані</h1>
+					</div>
+					<div class="my-room page-columns clr">
+						@@include('html/_my-room__menu.html')
+
+						<div class="room-section page-columns__big">
+							<div class="room-section__line-box mod-edit-profile">
+								<h2>Контактна інформація</h2>
+								<form class="room__form room-edit-profile">
+									<div class="form__line">
+										<div class="form__line-col-l">
+											<label>Ім'я <span class="text-color-1">*</span></label>
+											<input type="text" required="">
+										</div>
+										<div class="form__line-col-r">
+											<label>Прізвище <span class="text-color-1">*</span></label>
+											<input type="text" required="">
+										</div>
+									</div>
+									<div class="form__line">
+										<div class="form__line-col-l">
+											<label>Електронна пошта <span class="text-color-1">*</span></label>
+											<input type="email" required="">
+										</div>
+										<div class="form__line-col-r">
+											<label>Телефон <span class="text-color-1">*</span></label>
+											<input type="tel" required="">
+										</div>
+									</div>
+									<div class="form__line">
+										<div class="form__line-col-l">
+											<label>Пароль <span class="text-color-1">*</span></label>
+											<input type="password" required="">
+										</div>
+										<div class="form__line-col-r">
+											<label>Підтвердіть пароль <span class="text-color-1">*</span></label>
+											<input type="password" required="">
+										</div>
+									</div>
+									<div class="form__line mod-button">
+										<button type="submit" class="btn btn-size-1 btn-color-1">
+											Зберегти зміни
+										</button>
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			@@include('html/_footer.html')
+		</div>
+
+		@@include('html/_popup.html')
+
+		@@include('html/_js.html')
+
+	</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.html',{
+	"title":"Акції"
+	})
+	<body class="subpage sale-detail">
+
+		@@include('html/_sprite.html')
+
+		<div class="wrapper">
+
+			@@include('html/_header.html')
+			@@include('html/_mobile-menu.html')
+
+			<main class="content">
+				<div class="page-for-sale-detail">
+					<div class="page-for-sale-detail__img">
+						<img src="img/content/slider-1.jpg" width="1920" height="506" alt="test picture">
+					</div>
+					<div class="wrap">
+						<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<a title="Головна" itemprop="item" href="index.html">
+									<span itemprop="name">Магазин Veloplus</span>
+								</a>
+								<meta itemprop="position" content="1">
+							</div>
+							<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<a title="Акції" itemprop="item" href="sales.html">
+									<span itemprop="name">Акції</span>
+								</a>
+								<meta itemprop="position" content="2">
+							</div>
+							<div class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<link href="#" itemprop="item">
+								<span itemprop="name">Розстрочка 0% 6 міс</span>
+								<meta itemprop="position" content="3">
+							</div>
+						</div>
+						<div class="content-title">
+							<h1><span class="color-text-2">Акція:</span> Розстрочка 0% 6 міс</h1>
+							<div class="sale-detail__date">
+								З <time datetime="21.11.06">06.11.2021</time> -
+								по <time datetime="22.11.06">06.11.2022</time>
+							</div>
+						</div>
+						<div class="text">
+							<h2>Н2 О так це саме те що тобі потрібно</h2>
+							<p><span class="big-text">Також синтетичне тестування забезпечує широкому колу (фахівців) участь
+							у формуванні</span> своєчасного
+								виконання надзавдання. Кожен з нас розуміє очевидну річ: розбавлене неабиякою часткою емпатії,
+								раціональне мислення однозначно визначає кожного учасника як здатного приймати власні рішення
+								щодо подальших напрямів розвитку. Завдання організації, особливо ж реалізація намічених планових
+								завдань дозволяє оцінити значення позицій, які займають учасники щодо поставлених завдань.
+							</p>
+							<p> Постійне інформаційно-пропагандистське забезпечення нашої діяльності, у своєму <a href="#">класичному</a>
+								уявленні, припускає впровадження глибокодумних міркувань. Є спірна точка зору, яка проголошує
+								приблизно таке: акціонери найбільших компаній неоднозначні і будуть асоціативно розподілені по
+								галузях. Несподівано, представники сучасних соціальних резервів будуть змішані з не унікальними
+								даними до ступеня досконалої невпізнанності, через що зростає їхній статус марності. Безперечно,
+								курс на соціально-орієнтований національний проект однозначно фіксує необхідність форм впливу.
+							</p>
+							<div class="images_grid2 overflow">
+								<div class="images_grid2__pictures">
+									<img src="img/content/sale-detail-1.jpg" loading="lazy" decoding="async" width="754" height="479" alt="test picture">
+									<img src="img/content/sale-detail-2.jpg"  loading="lazy" decoding="async" width="754" height="479" alt="test picture">
+								</div>
+								<div class="images_grid2__text">
+									<p> Але ті, хто прагне витіснити традиційне виробництво, нанотехнології, незалежно від
+										їхнього рівня, повинні бути асоціативно розподілені по галузях.
+									</p>
+								</div>
+							</div>
+						</div>
+						<section class="section-for-products">
+							<div class="section-title">
+								<h2 class="h1">Товари в акції</h2>
+							</div>
+							<div class="box-for-product">
+								@@include('html/_product.html')
+								@@include('html/_product.html')
+								@@include('html/_product.html')
+								@@include('html/_product.html')
+								@@include('html/_product.html')
+								<div class="pagination__load-line">
+									<a href="#" class="pagination__load btn btn-size-1 btn-color-1">
+										Ще товари
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</main>
+
+			@@include('html/_footer.html')
+		</div>
+
+		@@include('html/_popup.html')
+
+		@@include('html/_js.html')
+
+	</body>
+</html>

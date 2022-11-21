@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.html',{
+	"title":"Магазин Veloplus"
+	})
+	<body class="subpage">
+
+		@@include('html/_sprite.html')
+
+		<div class="wrapper">
+
+			@@include('html/_header.html')
+			@@include('html/_mobile-menu-entry.html')
+
+			<main class="content">
+				<div class="wrap">
+					<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Головна" itemprop="item" href="index.html">
+								<span itemprop="name">Магазин Veloplus</span>
+							</a>
+							<meta itemprop="position" content="1">
+						</div>
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Кабінет" itemprop="item" href="my_room_index.html">
+								<span itemprop="name">Кабінет</span>
+							</a>
+							<meta itemprop="position" content="2">
+						</div>
+						<div class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<link href="#" itemprop="item">
+							<span itemprop="name">Список бажань</span>
+							<meta itemprop="position" content="3">
+						</div>
+					</div>
+					<div class="content-title">
+						<h1>Список бажань</h1>
+					</div>
+					<div class="my-room page-columns clr">
+						@@include('html/_my-room__menu.html')
+
+						<div class="room-section page-columns__big">
+							<div class="room-section__line-box">
+								<div class="favorite-list">
+									<div class="favorite-list__action-line">
+										<button type="submit" class="btn btn-size-1 btn-color-1 mod-icon mod-plus">
+											<span class="btn__plus-icon btn__icon">+</span>Додати групу</span>
+										</button>
+									</div>
+									<div class="favorite-list__line">
+										<h2>Назва групи 1</h2>
+										<div class="box-links">
+											<a href="#" class="btn btn-size-2 btn-color-3 favorite__link-edit">Перейменувати</a>
+											<a href="#" class="favorite__link-del del-btn" aria-label="delete">
+												<svg width="8" height="8">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close-2"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+									<div class="box-for-product mod-four">
+										@@include('html/_product-favorite.html')
+										@@include('html/_product-favorite.html')
+										@@include('html/_product-favorite.html')
+										@@include('html/_product-favorite.html')
+									</div>
+								</div>
+
+							</div>
+							<div class="room-section__line-box">
+								<div class="favorite-list">
+									<div class="favorite-list__line">
+										<h2>Назва групи 2</h2>
+										<div class="box-links">
+											<a href="#" class="btn btn-size-2 btn-color-3 favorite__link-edit">Перейменувати</a>
+											<a href="#" class="favorite__link-del del-btn" aria-label="delete">
+												<svg width="8" height="8">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close-2"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+									<div class="box-for-product mod-four">
+										@@include('html/_product-favorite.html')
+										@@include('html/_product-favorite.html')
+										@@include('html/_product-favorite.html')
+										@@include('html/_product-favorite.html')
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			@@include('html/_footer.html')
+		</div>
+
+		@@include('html/_popup.html')
+
+		@@include('html/_js.html')
+
+	</body>
+</html>

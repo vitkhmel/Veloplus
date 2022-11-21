@@ -1,0 +1,159 @@
+
+.contacts-columns {
+  display: flex;
+}
+
+.contacts-left-column {
+  width: 360px;
+  margin-right: 32px;
+}
+
+.contacts-right-column {
+  width: calc(100% - 32px - 360px);
+}
+.contacts-right-column__columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-page__map {
+  position: relative;
+  width: calc(50% - 16px);
+  margin-right: 32px;
+  height: 480px;
+  min-height: 100%;
+  .contacts-page__map--pointer {
+    position: absolute;
+    z-index: 2;
+  }
+  iframe {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
+.contacts-page__img {
+  width: calc(50% - 16px);
+  line-height: 0;
+}
+
+.contacts-page__info-unit {
+  margin-bottom: 25px;
+}
+
+.contacts-page__info-unit-title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.contacts-page__info-unit-info {
+  p {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contacts-page__contacts {
+  display: flex;
+  align-items: center;
+  .b-social__item {
+    margin-right: 20px;
+  }
+  .call-center {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .call-center__tel-icon {
+    display: none;
+  }
+}
+
+.contacts-page__info {
+  padding-top: 23px;
+}
+
+
+//------------------media screen 1200 begin-----------------------------*/
+@media (max-width: $md2+px) {
+
+  .contacts-left-column {
+    width: 286px;
+  }
+  .contacts-right-column {
+    width: calc(100% - 32px - 286px);
+    overflow: hidden;
+  }
+
+}
+
+//------------------media screen 1024 begin-----------------------------*/
+@media (max-width: $md3+px) {
+  .contacts-page__img {
+    display: none;
+  }
+  .contacts-page__map {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .contacts-right-column__columns {
+    height: 100%;
+  }
+
+  .contacts-page__info {
+    padding-top: 0;
+  }
+
+}
+
+//------------------media screen 800 end-----------------------------*/
+@media (max-width: $md4+px) {
+
+}
+
+//------------------media screen 568 begin-----------------------------*/
+@media (max-width: $md5+px) {
+  .contacts-columns {
+    flex-direction: column;
+  }
+  .contacts-left-column {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contacts-right-column {
+    width: 100%;
+    overflow: hidden;
+    order: -1;
+    margin-bottom: 25px;
+  }
+
+  .contacts-page__map,
+  .contacts-page__map iframe{
+    max-height: 100vh;
+  }
+
+
+
+}
+
+
+//------------------media screen 320 begin-----------------------------*/
+
+@media (max-width: $md6+px) {
+  .contacts-page__info-unit-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .call-center__b-tel {
+    font-size: 19px;
+  }
+}
+
+

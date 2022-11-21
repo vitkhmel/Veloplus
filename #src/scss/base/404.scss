@@ -1,0 +1,162 @@
+
+
+
+
+.page-404 {
+  padding-top: 0 !important;
+  .content {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+}
+
+.page-404__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  min-height: 100vh;
+  width: 100%;
+  background: url("../img/fon-404.png") no-repeat;
+  background-position: center;
+  .wrap {
+    margin: auto;
+    width: 927px !important;
+    max-width: 100% !important;
+    padding-left: 25px !important;;
+    padding-right: 25px !important;;
+  }
+}
+
+.box-404 {
+  background: #fff;
+  text-align: center;
+}
+
+.box-404__img {
+  position: relative;
+  line-height: 0;
+  margin-bottom: 58px;
+}
+.box-404__img-content {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  line-height: 0;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+.box-404__text {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.33em;
+  margin-bottom: 44px;
+  padding: 0 20px;
+}
+
+.box-404__logo {
+  top: 28px;
+  left: 53px;
+  width: 130px;
+  position: absolute;
+}
+
+
+//------------------media screen 1200 begin-----------------------------/
+@media (max-width: $md2+px) {
+  .box-404__text {
+    font-size: 24px;
+    margin-bottom: 35px;
+    padding: 0;
+  }
+
+  .page-404__content .wrap {
+    width: 670px!important;
+  }
+
+  .box-404__img {
+    margin-bottom: 34px;
+  }
+
+  .box-404__logo {
+    top: 20px;
+    left: 1px;
+    width: 130px;
+  }
+
+
+}
+
+//------------------media screen 1024 begin-----------------------------/
+@media (max-width: $md3+px) {
+
+}
+
+//------------------media screen 800 end-----------------------------/
+@media (max-width: $md4+px) {
+
+}
+
+//------------------media screen 568 begin-----------------------------/
+@media (max-width: $md5+px) {
+
+  .page-404__content .wrap {
+    width: 100%!important;
+  }
+  .box-404__img-content {
+    width: 440px;
+  }
+  .box-404__logo {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 77px;
+  }
+  .page-404__content {
+    padding: 30px 0;
+  }
+  .box-404__img {
+    margin-bottom: 20px;
+  }
+  .box-404__text {
+    font-size: 16px;
+    margin-bottom: 19px;
+    padding: 0;
+  }
+
+
+}
+
+
+//------------------media screen 320 begin-----------------------------/
+
+@media (max-width: $md6+px) {
+  .box-404 {
+    width: 100%;
+  }
+  .box-404__img-content {
+    width: 270px;
+  }
+  .box-404__logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 15px;
+    img {
+      width: 90px;
+      height: auto;
+    }
+  }
+  .box-404__text {
+    font-size: 14px;
+    margin-bottom: 19px;
+    padding: 0;
+  }
+
+}

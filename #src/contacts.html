@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.html',{
+	"title":"Контакти"
+	})
+	<body class="subpage">
+
+		@@include('html/_sprite.html')
+
+		<div class="wrapper">
+
+			@@include('html/_header.html')
+			@@include('html/_mobile-menu.html')
+
+			<main class="content">
+				<div class="wrap">
+					<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+						<div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<a title="Головна" itemprop="item" href="index.html">
+								<span itemprop="name">Магазин Veloplus</span>
+							</a>
+							<meta itemprop="position" content="1">
+						</div>
+						<div class="active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+							<link href="#" itemprop="item">
+							<span itemprop="name">Контакти</span>
+							<meta itemprop="position" content="2">
+						</div>
+					</div>
+
+					<div class="contacts-page">
+						<div class="content-title">
+							<h1>Контакти </h1>
+						</div>
+						<div class="contacts-columns">
+							<div class="contacts-left-column">
+								<div class="contacts-page__info">
+
+									<div class="contacts-page__info-unit">
+										<div class="contacts-page__info-unit-title">
+											Для зв’язку з менеджером
+										</div>
+										<div class="contacts-page__info-unit-info">
+											<p> Для шивидкої консультацій скористайтесь онлайн чатом або іншим зручним
+												способом
+											</p>
+											<div class="contacts-page__contacts">
+												<div class="call-center">
+													<a href="tel:+380663901008" class="call-center__b-tel">
+														<div class="call-center__tel">066 390 10 08</div>
+													</a>
+												</div>
+												<ul class="b-social">
+													<li class="b-social__item">
+														<a href="#" class="b-social__link mod-telegram" aria-label="telegram">
+															<svg width="16" height="16">
+																<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#telegram"></use>
+															</svg>
+														</a>
+													</li>
+													<li class="b-social__item">
+														<a href="#" class="b-social__link mod-viber" aria-label="viber">
+															<svg width="16" height="16">
+																<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#viber"></use>
+															</svg>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-page__info-unit">
+										<div class="contacts-page__info-unit-title">
+											Обробка замовлень
+										</div>
+										<div class="contacts-page__info-unit-info">
+											<p>
+												з 9 до 18, без вихідних
+											</p>
+										</div>
+									</div>
+									<div class="contacts-page__info-unit">
+										<div class="contacts-page__info-unit-title">
+											Адреса магазину шоуруму, майстерні
+										</div>
+										<div class="contacts-page__info-unit-info">
+											<p>
+												вул. Раїси Кириченко 45/19
+											</p>
+										</div>
+									</div>
+									<div class="contacts-page__info-unit">
+										<div class="contacts-page__info-unit-title">
+											Для зв’язку з керівництвом
+										</div>
+										<div class="contacts-page__info-unit-info">
+											<p>
+												Відправте інформацію через форму
+											</p>
+										</div>
+									</div>
+									<div class="contacts-page__line-for-btn">
+										<a href="#window-write-us" class="link-to-window btn btn-size-1 btn-color-1">
+											Написати нам
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="contacts-right-column">
+								<div class="contacts-right-column__columns">
+									<div class="contacts-page__map">
+										<iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20691.880429386427!2d34.54770856219417!3d49.58860175467149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1638373952422!5m2!1suk!2sua" width="558" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+										<div class="contacts-page__map--pointer" style="top:50%; left: 50%;">
+											<svg width="28" height="44">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pointer"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="contacts-page__img">
+										<img src="img/contacts-img.jpg" loading="lazy" decoding="async" width="558" height="480" alt="our shop">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</main>
+
+			@@include('html/_footer.html')
+		</div>
+
+		@@include('html/_popup.html')
+
+		@@include('html/_js.html')
+
+	</body>
+</html>

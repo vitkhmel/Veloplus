@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/_head.html',{
+	"title":"Магазин Veloplus"
+	})
+	<body class="index-page">
+
+		@@include('html/_sprite.html')
+
+		<div class="wrapper">
+
+			@@include('html/_header.html')
+			@@include('html/_mobile-menu.html')
+
+			<main class="content">
+				<div class="main-page-slider">
+					<div class="main-page-slider__item">
+						<a href="#" class="main-page-slider__link">
+							<img src="img/content/slider-2.jpg" width="1920" height="506" alt="test picture">
+							<div class="main-page-slider__link-mobile">
+								<img src="img/content/small-slide.jpg" width="1280" height="593" alt="test picture">
+							</div>
+						</a>
+					</div>
+					<div class="main-page-slider__item">
+						<a href="#" class="main-page-slider__link">
+							<img src="img/content/slider-2.jpg" width="1920" height="506" alt="test picture">
+							<div class="main-page-slider__link-mobile">
+								<img src="img/content/small-slide.jpg" width="1280" height="593" alt="test picture">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="wrap">
+					<section class="main-page-links">
+						<a href="service.html" class="main-page-links__item mod-big" style="background: #EEF2F3">
+							<div class="main-page-links__text">
+								<div class="h1">
+									Веломайстерня
+								</div>
+								<div class="h4">Професійне ТО та ремонт велосипеда.</div>
+								<div class="main-page-links__mobile-hidden">
+									<p>Скористатесь в м.Полтава вул.Раїси Кириченко, 45/19 <br> з 9:00 до 18:00 без вихідних </p>
+								</div>
+							</div>
+							<div class="main-page-links__img">
+								<img src="img/main-page-link-1-small.jpg" width="273" height="210" alt="">
+							</div>
+						</a>
+						<a href="service.html" class="main-page-links__item" style="background: #E2EDF2">
+							<div class="main-page-links__text">
+								<div class="h2">
+									Прокат велосипедів в Полтаві
+								</div>
+								<p>Комфортні умови та доступні ціни</p>
+							</div>
+							<div class="main-page-links__img">
+								<img src="img/main-page-link-2-small.jpg" width="200" height="210" alt="">
+							</div>
+						</a>
+						<a href="detail-news.html" class="main-page-links__item" style="background: #F3E3E1">
+							<div class="main-page-links__text">
+								<div class="h2">
+									<span class="color-text-2">Wow</span> -
+									подарункові сертифікати
+								</div>
+								<p>Комфортні умови та доступні ціни</p>
+							</div>
+							<div class="main-page-links__img">
+								<img src="img/main-page-link-3-small.jpg" width="200" height="210" alt="">
+							</div>
+						</a>
+					</section>
+
+					<section class="section-for-products">
+						<div class="section-title">
+							<h2 class="h1">Кращі ціни</h2>
+						</div>
+						<div class="box-for-product">
+							@@include('html/_product.html')
+							@@include('html/_product.html')
+							@@include('html/_product.html')
+							@@include('html/_product.html')
+							@@include('html/_product.html')
+							<div class="pagination__load-line">
+								<a href="#" class="pagination__load btn btn-size-1 btn-color-1">
+									Ще товари
+								</a>
+							</div>
+						</div>
+					</section>
+
+					<section class="box-for-promo-code">
+						<div class="b-promo-code">
+							<ul class="b-promo-code__top-line">
+								<li class="b-promo-code__item">
+									Акційні пропозиції для підписників
+								</li>
+								<li class="b-promo-code__item">
+									Конфіденційніст даних
+								</li>
+								<li class="b-promo-code__item">
+									Цікава та корисна інформація
+								</li>
+								<li class="b-promo-code__item">
+									Ми не спамимо
+								</li>
+								<li class="b-promo-code__item">
+									Подарунки
+								</li>
+							</ul>
+							<div class="b-promo-code__columns">
+								<div class="b-promo-code__left-column">
+									<div class="b-promo-code__info">
+										<div class="b-promo-code__present">
+											<div class="b-promo-code__present-img">
+												<svg width="40" height="59">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#promo-code"></use>
+												</svg>
+											</div>
+											<div class="b-promo-code__present-text">
+												<div class="b-promo-code__present-text-big">Промокод</div>
+												в подарунок
+											</div>
+										</div>
+										<div class="b-promo-code__title">
+											<div class="h2">Підпишись на найкращі пропозиції
+												та отримай промокод на 100 гривень<span
+														class="color-text-2">*</span>
+											</div>
+										</div>
+									</div>
+									<a href="detail-news.html" class="b-promo-code__more">*Детальніше про розсилку</a>
+								</div>
+								<div class="b-promo-code__right-column">
+									<form class="subscription-form">
+										<input class="subscription-form__text" type="email" placeholder="Вкажіть ел. пошту">
+<!--										<button class="subscription-form__btn btn btn-size-2 btn-color-1" type="submit">-->
+<!--											Підписатись-->
+<!--										</button>-->
+										<a href="#window-message" class="link-to-window subscription-form__btn btn btn-size-2 btn-color-1" type="submit">
+											Підписатись
+										</a>
+<!--										<a href="#window-message-2" class="link-to-window subscription-form__btn btn btn-size-2 btn-color-1" type="submit">-->
+<!--											Підписатись-->
+<!--										</a>-->
+									</form>
+									<div class="subscription-form__agreement">
+										Підписуючись погоджуюсь з <a href="#">угодою користувача</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="box-for-brends-section">
+						<div class="brends-section">
+							<div class="section-title brends-section__title">
+								<h2 class="h1">В нас ви знайдете велосипеди таких брендів</h2>
+								<a href="brends.html" class="brends-section__link btn btn-size-1 btn-color-1">
+									Більше брендів
+								</a>
+							</div>
+							<div class="box-for-brends brends-carousel">
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-1.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-2.jpg" loading="lazy" decoding="async"  width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-3.jpg" loading="lazy" decoding="async"  width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-4.jpg" loading="lazy" decoding="async"  width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-5.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-6.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-7.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-1.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-2.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-3.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-4.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-5.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-6.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+								<a href="filter-grid.html" class="b-brend">
+									<img src="img/logo/brend-7.jpg" loading="lazy" decoding="async" width="193" height="115" alt="test picture">
+								</a>
+							</div>
+						</div>
+					</section>
+
+					<section class="box-for-why-we">
+						<div class="overflow">
+							<div class="section-title">
+								<h2 class="h1"><span class="color-text-2">Вело+</span> професіний підхід до роботи</h2>
+							</div>
+						</div>
+						<div class="overflow why-we__scroll">
+                            <div class="why-we__pictures">
+
+                            </div>
+                            <div class="why-we">
+								<div class="why-we__item why-we__item-img">
+									<img src="img/content/why-we-img-1.jpg" loading="lazy" decoding="async" width="361" height="217" alt="Наш магазин">
+								</div>
+								<div class="why-we__item">
+									<div class="why-we__item-icon">
+										<svg width="60" height="60">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#choice"></use>
+										</svg>
+									</div>
+									<div class="why-we__item-title">
+										Великий вибір
+									</div>
+									<div class="why-we__item-text">
+										Обирайте з 2000+ представлених товарів у каталозі
+									</div>
+								</div>
+								<div class="why-we__item">
+									<div class="why-we__item-icon">
+										<svg width="99" height="55">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#delivery"></use>
+										</svg>
+									</div>
+									<div class="why-we__item-title">
+										Швидка доставка
+									</div>
+									<div class="why-we__item-text">
+										Доставка від 2000 грн безкоштовна, відправка в день замовлення
+									</div>
+								</div>
+								<div class="why-we__item">
+									<div class="why-we__item-icon">
+										<svg width="52" height="47">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#credit"></use>
+										</svg>
+									</div>
+									<div class="why-we__item-title">
+										Розстрочка
+									</div>
+									<div class="why-we__item-text">
+										Можливість купити товар зараз, а платити потім частинами
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="why-we__info">
+							<div class="why-we__info-columns">
+								<div class="why-we__info-left-column">
+									<div class="why-we__info-images">
+										<div class="why-we__info-img">
+											<img src="img/content/why-we-img-2.jpg" loading="lazy" decoding="async" width="361" height="217" alt="Обслуговування велосипедів">
+										</div>
+										<div class="why-we__info-img wow fadeInUpBig" data-wow-duration="0.4s" data-wow-delay="0.6s" data-wow-offset="200">
+											<img src="img/content/why-we-img-3.jpg" loading="lazy" decoding="async" width="361" height="217" alt="Прокат велосипедів для велопрогулянок">
+										</div>
+									</div>
+									<div class="why-we__info-text wow fadeInUpBig" data-wow-duration="0.4s" data-wow-delay="0.8s" data-wow-offset="150">
+										<div class="text">
+											<h2>Більше 15 років ми працюємо для вас</h2>
+											<p> На відміну від поширеної думки Lorem Ipsum не є випадковим набором літер.
+												Він походить з уривку класичної латинської літератури 45 року до н.е., тобто
+												має більш як 2000-річну історію.
+											</p>
+											<p> Lorem Ipsum походить з розділів 1.10.32 та 1.10.33 цицеронівського "de
+												Finibus Bonorum et Malorum" ("Про межі добра і зла"), написаного у 45 році
+												до н.е. Цей трактат з теорії етики був дуже популярним в епоху Відродження.
+											</p>
+										</div>
+										<div class="why-we__info-links">
+											<a href="about-us.html" class="btn btn-size-3 btn-color-1">
+												Про компанію
+											</a>
+											<div class="why-we__info-maps">
+												<div class="why-we__info-maps--text">
+													Ми цінуємо вашу думку
+												</div>
+												<div class="why-we__info-maps--map">
+													<div class="why-we__info-maps--map-icon">
+														<svg width="39" height="40">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google-maps"></use>
+														</svg>
+													</div>
+													<div class="why-we__info-maps--map-text">
+														Залиште відгук <br> в <a href="#">Google Maps</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="why-we__info-right-column">
+									<div class="why-we__info-big-img wow fadeInUpBig" data-wow-duration="0.4s" data-wow-delay="0.8s" data-wow-offset="200">
+										<img src="img/content/why-we-big-img.jpg" loading="lazy" decoding="async" width="754" height="539" alt="Наш магазин">
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+
+			@@include('html/_footer.html')
+		</div>
+
+		@@include('html/_popup.html')
+
+		@@include('html/_js.html')
+
+	</body>
+</html>

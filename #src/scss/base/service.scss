@@ -1,0 +1,167 @@
+
+.b-service {
+  display: flex;
+  margin-bottom: 67px;
+  background: #EEF2F3;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.b-service__content {
+  padding: 35px 32px 44px 32px;
+  width: calc(100% - 625px);
+  .call-center {
+    margin-bottom: 26px;
+  }
+}
+.b-service__img {
+  display: flex;
+  width: 625px;
+  align-items: flex-end;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.b-service__title {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 1.3em;
+  margin-bottom: 11px;
+}
+
+.b-service__columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  .text *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.b-service__left-column,
+.b-service__right-column {
+  width: calc(100% - 16px);
+}
+
+
+.b-service__bottom-text {
+  font-weight: 300;
+  font-size: 13px;
+  color: #767676;
+}
+
+.b-service__left-column {
+  padding-right: 30px;
+}
+
+.b-service__page {
+  padding-top: 24px;
+}
+
+
+
+//------------------media screen 1200 begin-----------------------------*/
+@media (max-width: $md2+px) {
+  .b-service__img {
+    display: none;
+  }
+  .b-service__content {
+    width: 100%;
+  }
+  .b-service__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    br {
+      display: none;
+    }
+  }
+
+  .b-service__columns .text ul {
+    margin-top: 0;
+  }
+  .b-service__left-column {
+    padding-right: 15px;
+  }
+  .b-service__right-column {
+    padding-left: 15px;
+  }
+}
+
+//------------------media screen 1024 begin-----------------------------*/
+@media (max-width: $md3+px) {
+  .b-service__page {
+    padding-top: 0;
+  }
+  .b-service__title {
+    font-size: 24px;
+  }
+  .b-service {
+    margin-bottom: 45px;
+  }
+}
+
+//------------------media screen 800 end-----------------------------*/
+@media (max-width: $md4+px) {
+
+  .b-service__title {
+    font-size: 20px;
+  }
+
+
+
+}
+
+//------------------media screen 568 begin-----------------------------*/
+@media (max-width: $md5+px) {
+  .b-service__content {
+    padding: 33px 20px 35px 20px;
+  }
+  .b-service {
+    margin-bottom: 40px;
+    box-shadow: none;
+    border-radius: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .b-service__title {
+    font-size: 17px;
+    margin-bottom: 23px;
+  }
+
+}
+
+
+//------------------media screen 320 begin-----------------------------*/
+
+@media (max-width: $md6+px) {
+  .b-service__title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .b-service__columns{
+    flex-wrap: wrap;
+  }
+  .b-service__left-column,
+  .b-service__right-column {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .b-service__columns .text :last-child {
+    margin-bottom: 10px;
+  }
+
+  .b-service {
+    margin-bottom: 30px;
+  }
+  .b-service__bottom-text {
+    font-size: 12px;
+  }
+
+
+}
