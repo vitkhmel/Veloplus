@@ -9685,7 +9685,8 @@ form .sliders .ui-slider-handle:before {
   }
 
   header .call-center__b-tel {
-    margin-right: 25px;
+    margin-right: 20px;
+    font-size: 19px;
   }
 
   .main-page-slider .slick-dots {
